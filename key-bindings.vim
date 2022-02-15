@@ -25,7 +25,10 @@ nnoremap <leader>e :sp<CR>
 " nnoremap <leader>j :bprevious<CR>
 nnoremap <leader>q :bdelete<CR>
 
-nmap<leader>a ggVG<CR>
+
+" control text commands
+nnoremap <C-A> ggVG
+
 
 
 " Switch between panels
