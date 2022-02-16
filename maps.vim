@@ -53,7 +53,7 @@ nmap <Leader>s <Plug>(easymotion-s2)
 nnoremap <Leader>x :!node %<cr>
 
 " Escape from mode insert
-:imap iii <Esc>
+inoremap jj <Esc>
 
 
 

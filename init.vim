@@ -22,7 +22,6 @@ set colorcolumn=120
 set linespace=3
 highlight Column ctermbg=0 guibg=lightgrey
 
-
 so ~/.config/nvim/plugins.vim
 so ~/.config/nvim/theme-config.vim
 so ~/.config/nvim/plugin-config.vim
@@ -45,4 +44,9 @@ augroup END
 
 let g:typescript_indent_disable = 1
 
-let g:coc_global_extensions = ['coc-tsserver']
+let g:coc_global_extensions = ['coc-tsserver','coc-json','coc-eslint']
+
+
+
+
+
