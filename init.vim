@@ -29,9 +29,8 @@ so ~/.config/nvim/plugin-config.vim
 so ~/.config/nvim/rainbow-config.vim
 
 
-" so ~/.config/nvim/maps.vim
 
-let mapleader = " "
+let mapleader = "\\"
 
 nmap<F5> :source ~/.config/nvim/init.vim<CR>
 vmap<F5> :source ~/.config/nvim/init.vim<CR>
@@ -43,7 +42,6 @@ nnoremap <leader>qa :qall<CR>
 nnoremap <leader>a ggVG
 
 
-xmap s <Plug>VSurround
 " tabs navigation
 map <Leader>h :tabprevious<cr>
 map <Leader>l :tabnext<cr>
