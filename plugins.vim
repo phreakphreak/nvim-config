@@ -32,11 +32,17 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'joshdick/onedark.vim'
 Plug 'ghifarit53/tokyonight-vim'
 
+" support languages
+
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'leafgarland/typescript-vim'
 
 
 " autocomplete
 " Plug 'sirver/ultisnips'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 
 " IDE
 Plug 'editorconfig/editorconfig-vim'
@@ -62,3 +68,7 @@ Plug 'tpope/vim-repeat'
 
 
 call plug#end()
+
+
+
+
