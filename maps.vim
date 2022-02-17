@@ -7,7 +7,7 @@ vmap<F5> :source ~/.config/nvim/init.vim<CR>
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>Q :q!<CR>
+nnoremap <leader>q! :q!<CR>
 nnoremap <leader>qa :qall<CR>
 nnoremap <leader>a ggVG
 
@@ -54,7 +54,6 @@ nnoremap <Leader>x :!node %<cr>
 
 " Escape from mode insert
 inoremap jj <Esc>
-
-
+vnoremap ii <Esc>
 
 
