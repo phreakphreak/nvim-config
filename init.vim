@@ -1,5 +1,4 @@
 syntax on
-
 set mouse=a
 set noerrorbells
 set sw=2
@@ -22,31 +21,10 @@ set colorcolumn=120
 set linespace=3
 highlight Column ctermbg=0 guibg=lightgrey
 
-so ~/.config/nvim/plugins.vim
-so ~/.config/nvim/theme-config.vim
-so ~/.config/nvim/plugin-config.vim
-so ~/.config/nvim/rainbow-config.vim
+so ~/.config/nvim/plugins/index.vim
+so ~/.config/nvim/maps/index.vim
+so ~/.config/nvim/themes/index.vim
 
-so ~/.config/nvim/maps.vim
-so ~/.config/nvim/config-ide.vim
-
-
-let g:javascript_plugin_jsdoc = 1
-let g:jsx_ext_required = 1
-let g:javascript_plugin_ngdoc = 1
-let g:javascript_plugin_flow = 1
-
-augroup javascript_folding
-    au!
-    au FileType javascript setlocal foldmethod=syntax
-augroup END
-
-
-let g:typescript_indent_disable = 1
-
-let g:coc_global_extensions = ['coc-tsserver','coc-json','coc-eslint']
-
-
-
+let g:coc_global_extensions = ['coc-tsserver','coc-json','coc-eslint','coc-prettier']
 
 

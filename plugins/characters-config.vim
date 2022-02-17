@@ -1,6 +1,7 @@
 
 
 
+
 set splitright
 function! OpenTerminal()
   " move to right most buffer
