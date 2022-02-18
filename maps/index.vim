@@ -14,8 +14,8 @@ nnoremap <leader>a ggVG
 
 xmap s <Plug>VSurround
 " tabs navigation
-map <Leader>h :tabprevious<cr>
-map <Leader>l :tabnext<cr>
+" map <Leader>h :tabprevious<cr>
+" map <Leader>l :tabnext<cr>
 
 " Moving text
 vnoremap K :m '<-2<CR>gv=gv
@@ -38,14 +38,18 @@ nnoremap <silent> <up> :resize  -5<CR>
 nnoremap <silent> <down> :resize +5<CR>
 
 
-nnoremap <leader>d :vsp<CR>
-nnoremap <leader>e :sp<CR>
+nnoremap <leader>vs :vsp<CR>
+nnoremap <leader>sp :sp<CR>
 
 
 
 " faster scrolling
-nnoremap <C-j> 10<C-e>
-nnoremap <C-k> 10<C-y>
+" scroll down
+nnoremap <M-j> 10<C-e>
+" scroll up
+nnoremap <M-k> 10<C-y>
+
+
 nmap <Leader>s <Plug>(easymotion-s2)
 
 
@@ -56,4 +60,8 @@ nnoremap <Leader>x :!node %<cr>
 inoremap jj <Esc>
 vnoremap ii <Esc>
 
-
+" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
