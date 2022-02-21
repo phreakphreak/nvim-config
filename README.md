@@ -1,4 +1,4 @@
-## Configguration Neovim and Settings for vscode
+## Configuration Neovim and Settings for vscode
 
 ### Neovim 
 
@@ -6,7 +6,7 @@
 
 2. Setup directory
 
-<code>
+```shell
   cd
 
   cd Downloads
@@ -19,16 +19,16 @@
 
   nvim init.vim
   
-</code>
+```
 
 ### save file with :w and do make :source % in mode normal
 ### after :PlugInstall
 
 3. Override vscode settings and Create Symbol link 
 
-<code>
+```shell
   cd ~/.config/Code/User
 
   ln -s -f ~/.config/nvim/vscode/settings.json settings.json
 
-</code>
+```
