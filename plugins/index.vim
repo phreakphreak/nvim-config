@@ -14,4 +14,5 @@ so ~/.config/nvim/plugins/characters-config.vim
 
 so ~/.config/nvim/plugins/rainbow-config.vim
 
+so ~/.config/nvim/plugins/nerdcommenter-config.vim
 

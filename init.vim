@@ -4,6 +4,9 @@ set noerrorbells
 set sw=2
 set expandtab
 set smartindent
+set tabstop=2
+set shiftwidth=2
+set autoindent
 set rnu
 set numberwidth=1
 set number
@@ -19,6 +22,7 @@ set cursorline
 set termguicolors
 set colorcolumn=120
 set linespace=3
+set nocompatible
 highlight Column ctermbg=0 guibg=lightgrey
 
 so ~/.config/nvim/plugins/index.vim

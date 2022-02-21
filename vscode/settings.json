@@ -2,13 +2,13 @@
   "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.iconTheme": "material-icon-theme",
   "tabnine.experimentalAutoImports": true,
+  "editor.bracketPairColorization.enabled": true,
   "editor.fontSize": 16,
-  "editor.lineHeight": 1.7,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.5,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.fontFamily": "'Cascadia Code PL'",
-  "editor.fontLigatures": "true",
   "terminal.integrated.fontFamily": "MesloLGS NF",
-  "editor.bracketPairColorization.enabled": true,
   "editor.wordWrap": "on",
   "editor.linkedEditing": true,
   "explorer.confirmDelete": false,
@@ -114,7 +114,6 @@
 
   "editor.hover.above": false,
   "terminal.integrated.fontSize": 14,
-  "window.zoomLevel": 1,
 
   "vim.leader": ",",
   "vim.easymotion": true,
@@ -132,15 +131,24 @@
   "vim.cursorStylePerMode.visual": "block",
   "vim.cursorStylePerMode.replace": "block",
   "vim.cursorStylePerMode.visualline": "block",
-
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.insert": "#afd75f",
+  "vim.statusBarColors.normal": "#87afff",
+  "vim.statusBarColors.visual": "#af87d7",
+  "vim.statusBarColors.visualline": "#af87d7",
+  "vim.statusBarColors.visualblock": "#af87d7",
+  "vim.statusBarColors.replace": "#D7AF5F",
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "after": ["<Esc>"],
+      "silent": true
     },
+
     {
       "before": ["J", "J"],
-      "after": ["<Esc>"]
+      "after": ["<Esc>"],
+      "silent": true
     }
   ],
 
@@ -161,22 +169,61 @@
           "command": "editor.action.commentLine",
           "args": []
         }
+      ],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "p"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.quickOpen",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["g", "D"],
+      "commands": ["editor.action.revealDefinitionAside"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.quickOpen",
+          "args": []
+        }
       ]
     }
   ],
 
   "vim.normalModeKeyBindingsNonRecursive": [
     {
+      "before": ["\\", "\\"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.terminal.toggleTerminal",
+          "args": []
+        }
+      ],
+      "silent": true
+    },
+    {
       "before": ["<leader>", "d"],
-      "after": ["d", "d"]
+      "after": ["d", "d"],
+      "silent": true
     },
     {
       "before": ["<C-j>"],
-      "after": ["10", "<C-e>"]
+      "after": ["<leader>", "<leader>", "j"]
     },
     {
       "before": ["<C-k>"],
-      "after": ["10", "<C-y>"]
+      "after": ["<leader>", "<leader>", "k"]
     },
 
     {
@@ -187,16 +234,38 @@
           "command": "workbench.action.files.save",
           "args": []
         }
-      ]
+      ],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "q"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.closeActiveEditor",
+          "args": []
+        }
+      ],
+      "silent": true
     },
     {
       "before": [":"],
       "commands": ["workbench.action.showCommands"],
       "silent": true
     },
-    // split panel <leader> + u, i, o, p
+    //* split panel <leader> + v, b
     {
-      "before": ["<leader>", "p"],
+      "before": ["<leader>", "v"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.splitEditorOrthogonal",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "b"],
       "after": [],
       "commands": [
         {
@@ -205,38 +274,9 @@
         }
       ]
     },
+    //* Close Active Editor
     {
-      "before": ["<leader>", "u"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.splitEditorLeft",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "i"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.splitEditorDown",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "o"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.splitEditorUp",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "e"],
+      "before": ["<leader>", "q"],
       "after": [],
       "commands": [
         {
@@ -245,7 +285,7 @@
         }
       ]
     },
-    // resize w:<C-[> <C-]>  h:[ ]
+    //* resize w:<C-[> <C-]>  h:[ ]
     {
       "before": ["<C-]>"],
       "after": [],
@@ -299,7 +339,13 @@
           "command": "editor.action.commentLine",
           "args": []
         }
-      ]
+      ],
+      "silent": true
     }
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#af87d7",
+    "statusBar.noFolderBackground": "#af87d7",
+    "statusBar.debuggingBackground": "#af87d7"
+  }
 }

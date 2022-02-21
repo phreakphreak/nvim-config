@@ -4,7 +4,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " syntax
 
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
+Plug 'scrooloose/syntastic'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'norcalli/nvim-colorizer.lua'
 
@@ -38,6 +39,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'jelera/vim-javascript-syntax'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " autocomplete
 " Plug 'sirver/ultisnips'

@@ -34,3 +34,4 @@ set diffopt+=vertical
 
 let $FZF_DEFAULT_OPTS='--layout=reverse'
 
+filetype plugin on
