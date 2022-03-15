@@ -20,10 +20,8 @@ xmap s <Plug>VSurround
 " Moving text
 vnoremap K :m '<-2<CR>gv=gv
 vnoremap J :m '>+1<CR>gv=gv
-
 nnoremap <Leader>k :m .-2<CR>==
 nnoremap <Leader>j :m .+1<CR>==
-
 
 
 nnoremap <leader>f :NERDTreeFocus<CR>
@@ -41,15 +39,12 @@ nnoremap <silent> <down> :resize +5<CR>
 nnoremap <leader>vs :vsp<CR>
 nnoremap <leader>sp :sp<CR>
 
-
-
 " faster scrolling
-" scroll down
+" scroll 
 nnoremap <M-j> 10<C-e>
-" scroll up
 nnoremap <M-k> 10<C-y>
 
-
+" Easymotion search with 2 characters
 nmap <Leader>s <Plug>(easymotion-s2)
 
 
@@ -58,10 +53,19 @@ nnoremap <Leader>x :!node %<cr>
 
 " Escape from mode insert
 inoremap jj <Esc>
+inoremap JJ <Esc>
 vnoremap ii <Esc>
+vnoremap II <Esc>
+
 
 " Use ctrl-[hjkl] to select the active split!
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
+
+" nnoremap <C-J> <C-W><C-J>
+" nnoremap <C-K> <C-W><C-K>
+" nnoremap <C-L> <C-W><C-L>
+" nnoremap <C-H> <C-W><C-H>
+
