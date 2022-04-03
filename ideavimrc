@@ -46,3 +46,11 @@ so ~/.config/nvim/maps/index.vim
 so ~/.config/nvim/themes/index.vim
 
 let g:coc_global_extensions = ['coc-tsserver','coc-json','coc-eslint','coc-prettier']
+
+
+sethandler <C-C> a:ide
+sethandler <C-I> a:vim
+sethandler <C-K> a:ide
+sethandler <C-L> a:vim
+sethandler <C-N> a:vim
+sethandler <C-O> a:vim
