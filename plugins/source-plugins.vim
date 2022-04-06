@@ -32,6 +32,9 @@ Plug 'christoomey/vim-tmux-navigator'
 " theme
 Plug 'joshdick/onedark.vim'
 Plug 'ghifarit53/tokyonight-vim'
+Plug 'morhetz/gruvbox'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " support languages
 

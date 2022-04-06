@@ -3,7 +3,7 @@ syntax on
 set mouse=a
 set noerrorbells
 
-
+set easymotion
 set visualbell
 set surround
 set highlightedyank
@@ -54,3 +54,24 @@ sethandler <C-K> a:ide
 sethandler <C-L> a:vim
 sethandler <C-N> a:vim
 sethandler <C-O> a:vim
+
+
+
+<ll>f{char}  <Plug>(easymotion-f)
+<ll>F{char}  <Plug>(easymotion-F)
+<ll>t{char}  <Plug>(easymotion-t)
+<ll>T{char}  <Plug>(easymotion-T)
+
+<ll>w        <Plug>(easymotion-w) 
+<ll>W        <Plug>(easymotion-W) 
+<ll>b        <Plug>(easymotion-b) 
+<ll>B        <Plug>(easymotion-B) 
+<ll>e        <Plug>(easymotion-e) 
+<ll>E        <Plug>(easymotion-E) 
+<ll>ge       <Plug>(easymotion-ge) 
+<ll>gE       <Plug>(easymotion-gE)
+<ll>j        <Plug>(easymotion-j) 
+<ll>k        <Plug>(easymotion-k) 
+<ll>s        <Plug>(easymotion-s)
+" <ll>N        <Plug>(easymotion-N)
+" <ll>n        <Plug>(easymotion-n)

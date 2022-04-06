@@ -7,8 +7,7 @@ vmap<F5> :source ~/.config/nvim/init.vim<CR>
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>q! :q!<CR>
-nnoremap <leader>qa :qall<CR>
+nnoremap <leader>Q :q!<CR>
 nnoremap <leader>a ggVG
 
 
@@ -18,8 +17,8 @@ xmap s <Plug>VSurround
 " map <Leader>l :tabnext<cr>
 
 " Moving text
-vnoremap K :m '<-2<CR>gv=gv
-vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv<CR>
+vnoremap J :m '>+1<CR>gv=gv<CR>
 nnoremap <Leader>k :m .-2<CR>==
 nnoremap <Leader>j :m .+1<CR>==
 

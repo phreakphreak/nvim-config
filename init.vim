@@ -29,4 +29,4 @@ so ~/.config/nvim/plugins/index.vim
 so ~/.config/nvim/maps/index.vim
 so ~/.config/nvim/themes/index.vim
 
-let g:coc_global_extensions = ['coc-tsserver','coc-json','coc-eslint','coc-prettier']
+let g:coc_global_extensions = ['coc-java','coc-rust-analyzer','coc-css','coc-pyright', 'coc-tsserver', 'coc-json', 'coc-eslint', 'coc-prettier', 'coc-go', 'coc-sh' ]
