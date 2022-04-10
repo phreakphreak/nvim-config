@@ -11,17 +11,17 @@ nnoremap <leader>Q :q!<CR>
 nnoremap <leader>a ggVG
 
 
-xmap s <Plug>VSurround
 " tabs navigation
 " map <Leader>h :tabprevious<cr>
 " map <Leader>l :tabnext<cr>
 
 " Moving text
-vnoremap K :m '<-2<CR>gv=gv<CR>
-vnoremap J :m '>+1<CR>gv=gv<CR>
-nnoremap <Leader>k :m .-2<CR>==
-nnoremap <Leader>j :m .+1<CR>==
-
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
 
 nnoremap <leader>f :NERDTreeFocus<CR>
 nnoremap <leader>n :NERDTree<CR>
@@ -35,16 +35,15 @@ nnoremap <silent> <up> :resize  -5<CR>
 nnoremap <silent> <down> :resize +5<CR>
 
 
-nnoremap <leader>vs :vsp<CR>
-nnoremap <leader>sp :sp<CR>
+nnoremap <leader>v :vsp<CR>
+nnoremap <leader>b :sp<CR>
 
 " faster scrolling
-" scroll 
-nnoremap <M-j> 10<C-e>
-nnoremap <M-k> 10<C-y>
+"  nnoremap <M-j> 10<C-e>
+"  nnoremap <M-k> 10<C-y>
 
 " Easymotion search with 2 characters
-nmap <Leader>s <Plug>(easymotion-s2)
+nmap <leader>s <Plug>(easymotion-s2)
 
 
 " run current file

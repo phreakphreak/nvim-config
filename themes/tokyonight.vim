@@ -8,5 +8,3 @@ let g:tokyonight_transparent_background=1
 
 colorscheme tokyonight
 
-let g:lightline = {'colorscheme' : 'tokyonight'}
-let g:airline_theme = "tokyonight"

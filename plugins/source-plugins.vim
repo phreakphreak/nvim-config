@@ -1,9 +1,6 @@
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-
-" syntax
-
 " Plug 'sheerun/vim-polyglot'
 Plug 'scrooloose/syntastic'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
@@ -11,23 +8,22 @@ Plug 'norcalli/nvim-colorizer.lua'
 
 " status bar
 " Plug 'maximbaz/lightline-ale'
-Plug 'itchyny/lightline.vim'
-
+"  Plug 'itchyny/lightline.vim'
+"  Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 
-" tree
+" Nerdtree
 Plug 'scrooloose/nerdtree'
 
-" typing
+" Auto Close Tag HTML and XHTML
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
 " tmux
 Plug 'benmills/vimux'
 Plug 'christoomey/vim-tmux-navigator'
-
-
 
 " theme
 Plug 'joshdick/onedark.vim'
@@ -37,7 +33,6 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 " support languages
-
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
@@ -45,9 +40,7 @@ Plug 'jelera/vim-javascript-syntax'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " autocomplete
-" Plug 'sirver/ultisnips'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 
 " IDE
 Plug 'editorconfig/editorconfig-vim'
@@ -62,11 +55,8 @@ Plug 'mattn/emmet-vim'
 Plug 'luochen1990/rainbow'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
-
-
 " git
 Plug 'tpope/vim-fugitive'
-
 Plug 'tpope/vim-repeat'
 
 
