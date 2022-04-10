@@ -29,18 +29,3 @@ let g:airline_inactive_alt_sep=1
 let g:airline_symbols_ascii = 1
 "  let g:airline_theme='dark'
 
-let g:airline_theme_patch_func = 'AirlineThemePatch'
-function! AirlineThemePatch(palette)
-if g:airline_theme == 'badwolf'
-    for colors in values(a:palette.inactive)
-    let colors[3] = 245
-    endfor
-endif
-endfunction
-
-function! s:update_highlights()
-    hi CursorLine ctermbg=none guibg=NONE
-    hi VertSplit ctermbg=none guibg=NONE
-endfunction
-autocmd User AirlineAfterTheme call s:update_highlights()
-
