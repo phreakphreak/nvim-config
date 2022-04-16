@@ -45,27 +45,26 @@ nnoremap <leader>Q :q!<CR>
 nnoremap <leader>a ggVG
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
-nnoremap <leader>f :NERDTreeFocus<CR>
-nnoremap <leader>n :NERDTree<CR>
-nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <silent><leader>e :NERDTreeFocus<CR>
+nnoremap <silent><C-n> :NERDTreeToggle<CR>
 nnoremap <leader>nt :NERDTreeFind<CR>
 nnoremap <Leader>zz :let &scrolloff=999-&scrolloff<CR> " center scrolling
 nnoremap <leader>zx :let &scrolloff=0<CR> " reset scrolling
 nnoremap <C-[>  15<C-e>  " faster scrolling
 nnoremap <C-]>  15<C-y>  " faster scrolling
-nnoremap <C-J> <C-W><C-J> " Use ctrl-[hjkl] to select the active split!
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <C-J> <C-W><C-j> " Use ctrl-[hjkl] to select the active split!
+nnoremap <C-K> <C-W><C-k>
+nnoremap <C-L> <C-W><C-l>
+nnoremap <C-H> <C-W><C-h>
 
 nmap <S-Tab> :tabprevious<cr>
 nmap <Tab> :tabnext<cr>
-nmap <silent> <right> :vertical resize +5<CR>
-nmap <silent> <left> :vertical resize -5<CR>
+nmap <silent> <left> :vertical resize +5<CR>
+nmap <silent> <right> :vertical resize -5<CR>
 nmap <silent> <up> :resize  -5<CR>
 nmap <silent> <down> :resize +5<CR>
-nmap <leader>v :vsp<CR>
-nmap <leader>b :sp<CR>
+" nmap <leader>v :vsp<CR>
+" nmap <leader>b :sp<CR>
 nmap <C-a> gg<S-v>G
 " Split window
 nmap ss :split<Return><C-w>w
