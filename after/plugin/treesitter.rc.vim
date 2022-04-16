@@ -15,15 +15,24 @@ require'nvim-treesitter.configs'.setup {
   },
   ensure_installed = {
     "tsx",
-    "toml",
-    "fish",
-    "php",
-    "json",
-    "yaml",
-    "swift",
     "html",
-    "scss"
+    "css",
+    "javascript",
+    "rust",
+    "go",
+    "tsx",
+    "typescript",
+    "bash",
+    "java",
+    "python",
+    "lua",
+    "vim",
+    "json",
+    "markdown",
+    "cpp",  
+    
   },
+
   autotag = {
     enable = true,
   }
