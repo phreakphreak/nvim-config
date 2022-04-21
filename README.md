@@ -7,28 +7,13 @@
 2. Setup directory
 
 ```shell
-  cd
 
-  cd Downloads
-
-  git clone https://github.com/phreakphreak/nvim-config.git
-
-  mv nvim-config ~/.config/nvim 
-
-  cd ~/.config/nvim
-
-  nvim init.vim
+  mv ~/.config/nvim ~/.config/NVIM.BAK
+  git clone https://github.com/phreakphreak/nvim-config.git ~/.config/nvim
+  nvim
   
 ```
 
 ### save file with :w and do make :source % in mode normal
 ### after :PlugInstall
 
-3. Override vscode settings and Create Symbol link 
-
-```shell
-  cd ~/.config/Code/User
-
-  ln -s -f ~/.config/nvim/vscode/settings.json settings.json
-
-```
